@@ -23,26 +23,7 @@ if (isset($_GET['logout'])) {
 </head>
 <body>
 <div class="header">
-
-    <h2 class="title">Home Page</h2>
-    <div class="header-content">
-        <div class="user-section">
-            <!-- logged in user information -->
-            <?php  if (isset($_SESSION['username'])) : ?>
-                <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-                <p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
-            <?php endif ?>
-        </div>
-        <div class="group-selection-section">
-            <p>Group:</p>
-            <select  id="group-selection">
-                <option value="CP2405">CP2405</option>
-                <option value="CP5801">CP5801</option>
-                <option value="CC2511">CC2511</option>
-                <option value="CP7852">CP7852</option>
-            </select>
-        </div>
-    </div>
+    <h2>Home Page</h2>
 </div>
 <div class="content">
 
@@ -58,20 +39,11 @@ if (isset($_GET['logout'])) {
         </div>
     <?php endif ?>
 
-
-    <h2>What do you want to do?</h2>
-    <div class="features_section">
-
-        <div class="feature">
-            <h3>Schedule</h3>
-            <img src="imgs/schedule-icon.png" width="100px" height="100px">
-        </div>
-
-        <div class="feature">
-            <h3>Team Messages</h3>
-            <img src="imgs/messages-icon.png" width="100px" height="100px">
-        </div>
-    </div>
+    <!-- logged in user information -->
+    <?php  if (isset($_SESSION['username'])) : ?>
+        <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+        <p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
+    <?php endif ?>
 </div>
 
 </body>

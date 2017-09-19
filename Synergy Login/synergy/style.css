@@ -2,34 +2,27 @@
     margin: 0px;
     padding: 0px;
 }
-
-.features_section{
-    display: flex;
-}
-
-.user-section{
-    text-align: right  ;
-    }
-
 body {
     font-size: 120%;
-    background: #060026;
+    background: #F8F8FF;
 }
 
 .header {
+    width: 30%;
     margin: 50px auto 0px;
-    width: 40%;
     color: white;
+    background: #5F9EA0;
     text-align: center;
-    background-color: #67ae97;
+    border: 1px solid #B0C4DE;
     border-bottom: none;
     border-radius: 10px 10px 0px 0px;
     padding: 20px;
 }
 form, .content {
-    width: 40%;
+    width: 30%;
     margin: 0px auto;
     padding: 20px;
+    border: 1px solid #B0C4DE;
     background: white;
     border-radius: 0px 0px 10px 10px;
 }
@@ -38,14 +31,13 @@ form, .content {
 }
 
 .input-group label {
-
     display: block;
     text-align: left;
     margin: 3px;
 }
 .input-group input {
-    width: 93%;
     height: 30px;
+    width: 93%;
     padding: 5px 10px;
     font-size: 16px;
     border-radius: 5px;
@@ -55,7 +47,7 @@ form, .content {
     padding: 10px;
     font-size: 15px;
     color: white;
-    background: #67ae97;
+    background: #5F9EA0;
     border: none;
     border-radius: 5px;
 }

@@ -9,7 +9,7 @@ $errors = array();
 $_SESSION['success'] = "";
 
 // DB Connection
-$db = mysqli_connect('localhost', 'root', '', 'localhost');
+$db = mysqli_connect('localhost', 'root', '', 'registration');
 
 // Register User
 if (isset($_POST['reg_user'])) {
@@ -36,7 +36,7 @@ if (isset($_POST['reg_user'])) {
 
     // Register user if there are no errors in the form
     if (count($errors) == 0) {
-        $password = password_hash($password_1); // Password encryption
+        $password = md5($password_1); // Password encryption
         $query = "INSERT INTO users (username, email, password) 
                       VALUES('$username', '$email', '$password')";
         mysqli_query($db, $query);
@@ -61,7 +61,7 @@ if (isset($_POST['reg_user'])) {
         }
 
         if (count($errors) == 0) {
-            $password = password_hash($password); // Password encryption before comparison to DB
+            $password = md5($password); // Password encryption before comparison to DB
             $query = "SELECT * 
                       FROM users 
                       WHERE username='$username' 
@@ -80,5 +80,8 @@ if (isset($_POST['reg_user'])) {
             }
         }
     }
+
+?>
+
 
 ?>
