@@ -1,19 +1,3 @@
-<?php
-session_start();
-
-//
-if (!isset($_SESSION['username'])) {
-    $_SESSION['msg'] = "You must log in first";
-    header('location: login.php');
-}
-
-// Log out
-if (isset($_GET['logout'])) {
-    session_destroy();
-    unset($_SESSION['username']);
-    header("location: login.php");
-}
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +7,7 @@ if (isset($_GET['logout'])) {
 <body>
 <div class="header">
 
-    <h2 class="title">Home Page</h2>
+    <h2 class="title">Schedule</h2>
     <div class="header-content">
         <div class="user-section">
             <!-- logged in user information -->
@@ -34,7 +18,7 @@ if (isset($_GET['logout'])) {
         </div>
         <div class="group-selection-section">
             <p>Group:</p>
-            <select  id="group-selection" >
+            <select  id="group-selection">
                 <option value="CP2405">CP2405</option>
                 <option value="CP5801">CP5801</option>
                 <option value="CC2511">CC2511</option>
@@ -56,27 +40,13 @@ if (isset($_GET['logout'])) {
             </h3>
         </div>
     <?php endif ?>
+    <div class="week-section">
+    <div class="week">
 
-
-    <h2>What do you want to do?</h2>
-    <div class="features_section">
-
-        <a href="schedule.php">
-            <div class="feature">
-                <h3>Schedule</h3>
-                <img src="imgs/schedule-icon.png" width="100px" height="100px">
-            </div>
-        </a>
-
-            <div class="feature">
-                <h3>Team Messages</h3>
-                <img src="imgs/messages-icon.png" width="100px" height="100px">
-            </div>
+    <h3>Add Week and Focus...</h3>
 
     </div>
-
-
-
+    </div>
 </div>
 
 </body>
