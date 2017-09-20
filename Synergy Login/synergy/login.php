@@ -7,9 +7,7 @@
 </head>
 <body>
 
-
 <div class="header">
-    <img src="imgs/Synergy_SwirlLogo.png" alt="Synergy Logo" height="100" width="200">
     <h2>Login</h2>
 </div>
 
