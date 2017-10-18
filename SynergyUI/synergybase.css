@@ -11,10 +11,14 @@ body{
 }
 header{
     width:100%;
-    background:#ffffff;
-    height:60px;
+    background:black;
+    height:110px;
     line-height:60px;
     border-bottom:1px solid #dddddd;
+}
+.logoimg{
+    position:relative;
+    left:20%;
 }
 .hamburger{
     background:none;

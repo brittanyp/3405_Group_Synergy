@@ -5,6 +5,7 @@
 <header>
     <button class="hamburger" onclick="hideHam()">&#9776;</button>
     <button class="cross" onclick="hideCross()">&#735;</button>
+    <img class="logoimg" src="Synergy_SwirlLogo.png" alt="Smiley face" height="100" width="200">
 </header>
 
 <div class="menu">
