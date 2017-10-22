@@ -67,7 +67,8 @@ if (isset($_GET['logout'])) {
                 <img src="imgs/schedule-icon.png" width="100px" height="100px">
             </div>
         </a>
-
+			
+			<a href="http://localhost:1337">
             <div class="feature">
                 <h3>Team Messages</h3>
                 <img src="imgs/messages-icon.png" width="100px" height="100px">

@@ -6,7 +6,7 @@ var io = require('socket.io').listen(server);
 users = [];
 connections = [];
 
-server.listen(process.env.PORT || 3000);
+server.listen(process.env.PORT || 1337);
 console.log('Server running....');
 app.get('/', function (req, res) {
     res.sendfile(__dirname + '/index.html');
